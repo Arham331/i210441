@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="CircleColor">#FFB6ECE7</color>
+    <color name="FontColor">#FF24949B</color>
+    <color name="DesignColor">#FF39B9C1</color>
+    <color name="AscentColor">#FFFFC90A</color>
+    <color name="BackColor">#FFDEF8F8</color>
+    <color name="OffWhite">#FFF0F4F3</color>
+    <color name="Dark">#FF00566D</color>
 </resources>
