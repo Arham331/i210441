@@ -10,27 +10,27 @@
         <!-- Circle 1 -->
         <ImageView
             android:id="@+id/circle1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="-40dp"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="-100dp"
             android:background="@drawable/circle_background"
             app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Circle 2 -->
         <ImageView
             android:id="@+id/circle2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
             android:background="@drawable/circle_background"
-            android:layout_marginLeft="-35dp"
+            android:layout_marginLeft="-100dp"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="350dp"
+            android:layout_width="210dp"
             android:layout_height="100dp"
             android:background="@color/OffWhite"
-            android:src="@drawable/mentormelogo2"
+            android:src="@drawable/mentormposter"
             app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +70,8 @@
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:background="@drawable/corners_box"
-            android:hint="  Enter your Email"
+            android:hint="Enter your Email"
+            android:textAlignment="center"
             android:inputType="textEmailAddress"
             android:textSize="20dp"
             app:layout_constraintBottom_toTopOf="@+id/cardView"
@@ -82,7 +83,8 @@
             android:id="@+id/passwordentry"
             android:layout_width="200dp"
             android:layout_height="30dp"
-            android:hint="  Enter your Password"
+            android:hint="Enter your Password"
+            android:textAlignment="center"
             android:background="@drawable/corners_box"
             android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@+id/cardView"
@@ -148,13 +150,12 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="150dp"
+            android:layout_width="170dp"
             android:layout_height="20dp"
             android:layout_marginBottom="4dp"
             android:text="Don't have an account?"
-
             android:textColor="@color/OffWhite"
-            android:textSize="13dp"
+            android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.308"
@@ -162,18 +163,17 @@
 
         <TextView
             android:id="@+id/textViewSignUp"
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="20dp"
             android:layout_marginBottom="4dp"
+            android:onClick="registerUserFunction"
             android:text="Sign Up"
             android:textColor="@color/Dark"
-            android:textSize="13dp"
+            android:textSize="15dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            android:onClick="registerUserFunction"
-            />
+            app:layout_constraintStart_toEndOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

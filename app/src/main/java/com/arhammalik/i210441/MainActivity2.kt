@@ -43,7 +43,7 @@ class MainActivity2 : AppCompatActivity()
                 val intent = Intent(this@MainActivity2, MainActivity3::class.java)
                 startActivity(intent)
                 finish()
-            }, 3000)
+            }, 0)
     }
 
 }
