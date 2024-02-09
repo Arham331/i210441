@@ -25,7 +25,13 @@ class MainActivity3 : AppCompatActivity()
 
     fun LoginButton(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity3, MainActivity4::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
     fun BackToLoginPage(view: View)
