@@ -34,6 +34,17 @@ class MainActivity7 : AppCompatActivity()
             }, 0)
     }
 
+    fun BackToForgotPasswordPage(view: View)
+    {
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity7, MainActivity6::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
+    }
+
     fun GoToDashboard(view: View)
     {
         handler = Handler()
