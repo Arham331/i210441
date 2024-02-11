@@ -4,29 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.view.KeyEvent
 import android.view.View
-import android.view.inputmethod.EditorInfo
-import android.widget.EditText
+import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.Spinner
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 
-class MainActivity8 : AppCompatActivity()
+class MainActivity9 : AppCompatActivity()
 {
     private lateinit var handler: Handler
-    private lateinit var editText: EditText
-    private fun navigateToSearchPage()
-    {
-        handler = Handler()
-        handler.postDelayed(
-            {
-                val intent = Intent(this@MainActivity8, MainActivity9::class.java)
-                startActivity(intent)
-                finish()
-            }, 0)
-    }
 
     fun BecomeMentorPage(view: View)
     {
@@ -38,7 +26,7 @@ class MainActivity8 : AppCompatActivity()
         handler = Handler()
         handler.postDelayed(
             {
-                val intent = Intent(this@MainActivity8, MainActivity5::class.java)
+                val intent = Intent(this@MainActivity9, MainActivity5::class.java)
                 startActivity(intent)
                 finish()
             }, 0)
@@ -47,7 +35,7 @@ class MainActivity8 : AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main8)
+        setContentView(R.layout.activity_main9)
 
         val home: TextView = findViewById(R.id.home_text)
         val search: TextView = findViewById(R.id.search_text)
@@ -70,7 +58,7 @@ class MainActivity8 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity8, MainActivity5::class.java)
+                    val intent = Intent(this@MainActivity9, MainActivity5::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -79,7 +67,7 @@ class MainActivity8 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity8, MainActivity5::class.java)
+                    val intent = Intent(this@MainActivity9, MainActivity5::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -90,7 +78,7 @@ class MainActivity8 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity8, MainActivity8::class.java)
+                    val intent = Intent(this@MainActivity9, MainActivity8::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -99,7 +87,7 @@ class MainActivity8 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity8, MainActivity8::class.java)
+                    val intent = Intent(this@MainActivity9, MainActivity8::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -127,35 +115,15 @@ class MainActivity8 : AppCompatActivity()
         chat.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
         profile.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
 
-        val c1 = findViewById<ImageView>(R.id.cross1)
-        val c2 = findViewById<ImageView>(R.id.cross2)
-        val c3 = findViewById<ImageView>(R.id.cross3)
-
-        val l1 = findViewById<LinearLayout>(R.id.linearLayout2)
-        val l2 = findViewById<LinearLayout>(R.id.linearLayout3)
-        val l3 = findViewById<LinearLayout>(R.id.linearLayout4)
-        c1.setOnClickListener {
-            l1.visibility = View.GONE
-        }
-        c2.setOnClickListener {
-            l2.visibility = View.GONE
-        }
-        c3.setOnClickListener {
-            l3.visibility = View.GONE
-        }
-
-        editText = findViewById(R.id.editText2)
-        editText.setOnEditorActionListener { _, actionId, event ->
-            if (actionId == EditorInfo.IME_ACTION_DONE ||
-                (event != null && event.keyCode == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_DOWN)
-            )
+    }
+    fun GoToSearchEngine(view: View)
+    {
+        handler = Handler()
+        handler.postDelayed(
             {
-                navigateToSearchPage()
-                return@setOnEditorActionListener true
-            }
-            return@setOnEditorActionListener false
-        }
-
-
+                val intent = Intent(this@MainActivity9, MainActivity8::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 }
