@@ -18,7 +18,13 @@ class MainActivity5 : AppCompatActivity()
 
     fun BecomeMentorPage(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity5, MainActivity12::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
     fun GoToJohnCooper(view: View)

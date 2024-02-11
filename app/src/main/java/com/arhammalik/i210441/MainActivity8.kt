@@ -30,7 +30,13 @@ class MainActivity8 : AppCompatActivity()
 
     fun BecomeMentorPage(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity8, MainActivity12::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
     fun GoToDashboard(view: View)
