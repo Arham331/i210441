@@ -38,7 +38,14 @@ class MainActivity2 : AppCompatActivity()
 
     fun loginFunction(view: View)
     {
-
+        print("Button Pressed")
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity2, MainActivity5::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
     fun registerUserFunction(view: View)

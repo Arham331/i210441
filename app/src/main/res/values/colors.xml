@@ -9,4 +9,13 @@
     <color name="BackColor">#FFDEF8F8</color>
     <color name="OffWhite">#FFF0F4F3</color>
     <color name="Dark">#FF00566D</color>
+    <color name="Light">#FFACCCD0</color>
+    <color name="Green">#FF449F48</color>
+    <color name="Red">#FFA70606</color>
+    <color name="DarkGrey">#FF616161</color>
+    <color name="Grey">#FF9E9E9E</color>
+    <color name="LightGrey">#FFE0E0E0</color>
+    <color name="Shadow">#33000000</color>
+    <color name="FontShadeLight">#FFDEF8F8</color>
+    <color name="FontShadeDark">#FF51A8A6</color>
 </resources>
