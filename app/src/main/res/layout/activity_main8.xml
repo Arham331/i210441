@@ -152,7 +152,137 @@
     </LinearLayout>
 
 
+    <View
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_top_corners2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/guideline"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="-50dp"
+        android:text="Browse Categories"
+        android:textColor="@color/Dark"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/entrepreneurship_linear"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/entrepreneurship"
+            />
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrepreneurship"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+        />
+
+        <ImageView
+            android:layout_marginTop="35dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="65dp"
+            android:src="@drawable/diagonal_arrow"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personalgrowth_linear"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/entrepreneurship_linear"
+        android:layout_marginTop="00dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/personal_growth"
+            />
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Growth"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:layout_marginTop="35dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/diagonal_arrow"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/education_linear"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/personalgrowth_linear"
+        android:layout_marginTop="00dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/education"
+            />
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:layout_marginTop="35dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/diagonal_arrow"
+            />
+    </LinearLayout>
 
 
 
