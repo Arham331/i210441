@@ -21,6 +21,16 @@ class MainActivity5 : AppCompatActivity()
 
     }
 
+    fun GoToJohnCooper(view: View)
+    {
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity5, MainActivity10::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
+    }
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)

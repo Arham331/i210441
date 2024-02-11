@@ -1,0 +1,22 @@
+<!-- res/drawable/circle_with_image.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Circular Background Shape -->
+    <item>
+        <shape android:shape="oval">
+            <!-- Set the background color for the circle -->
+            <solid android:color="@color/CircleColor" />
+            <!-- Define the width and height of the circle -->
+            <size
+                android:width="100dp"
+                android:height="100dp"/>
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/john_cooper"
+        android:gravity="center"
+        android:width="90dp"
+        android:height="90dp"
+        />
+
+</layer-list>
