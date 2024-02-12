@@ -40,6 +40,7 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginRight="25dp"
                 android:src="@drawable/bell_icon_background"
+                android:onClick="NotificationPage"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

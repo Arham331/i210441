@@ -16,6 +16,16 @@ class MainActivity5 : AppCompatActivity()
 {
     private lateinit var handler: Handler
 
+    fun NotificationPage(view: View)
+    {
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity5, MainActivity24::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
+    }
     fun BecomeMentorPage(view: View)
     {
         handler = Handler()

@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
 class MainActivity12 : AppCompatActivity()
 {
@@ -55,5 +56,66 @@ class MainActivity12 : AppCompatActivity()
         searchpic.setImageResource(R.drawable.search_icon_not_selected)
         chatpic.setImageResource(R.drawable.chat_icon_not_selected)
         profilepic.setImageResource(R.drawable.profile_icon_not_selected)
+
+        //Navigation to DASHBOARD if clicked
+        homepic.setOnClickListener {
+            handler = Handler()
+            handler.postDelayed(
+                {
+                    val intent = Intent(this@MainActivity12, MainActivity5::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 0)
+        }
+        home.setOnClickListener {
+            handler = Handler()
+            handler.postDelayed(
+                {
+                    val intent = Intent(this@MainActivity12, MainActivity5::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 0)
+        }
+
+        //Navigation to SEARCH if clicked
+        searchpic.setOnClickListener {
+            handler = Handler()
+            handler.postDelayed(
+                {
+                    val intent = Intent(this@MainActivity12, MainActivity8::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 0)
+        }
+        search.setOnClickListener {
+            handler = Handler()
+            handler.postDelayed(
+                {
+                    val intent = Intent(this@MainActivity12, MainActivity8::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 0)
+        }
+
+        //Navigation to CHATS if clicked
+        chatpic.setOnClickListener {
+
+        }
+        chat.setOnClickListener {
+
+        }
+
+        //Navigation to PROFILE if clicked
+        profilepic.setOnClickListener {
+
+        }
+        profile.setOnClickListener {
+
+        }
+
+        home.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
+        search.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
+        chat.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
+        profile.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
     }
 }
