@@ -11,6 +11,7 @@ import android.widget.TextView
 
 class MainActivity24 : AppCompatActivity()
 {
+    private lateinit var handler: Handler
     fun GoToDashboard(view: View)
     {
         handler = Handler()
@@ -21,8 +22,6 @@ class MainActivity24 : AppCompatActivity()
                 finish()
             }, 0)
     }
-
-    private lateinit var handler: Handler
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)

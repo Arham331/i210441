@@ -1,0 +1,28 @@
+<!-- custom_rating_icons.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/full_given_rating"
+        android:width="14dp"
+        android:height="14dp" />
+    <item
+        android:drawable="@drawable/full_given_rating"
+        android:width="14dp"
+        android:height="14dp"
+        android:left="14dp"/>
+    <item
+        android:drawable="@drawable/full_given_rating"
+        android:width="14dp"
+        android:height="14dp"
+        android:left="28dp"/>
+    <item
+        android:drawable="@drawable/not_given_rating"
+        android:width="14dp"
+        android:height="14dp"
+        android:left="42dp"/>
+    <item
+        android:drawable="@drawable/not_given_rating"
+        android:width="14dp"
+        android:height="14dp"
+        android:left="56dp"/>
+</layer-list>

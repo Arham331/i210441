@@ -5,28 +5,54 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
-import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.Spinner
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 
-class MainActivity9 : AppCompatActivity()
+class MainActivity21 : AppCompatActivity()
 {
     private lateinit var handler: Handler
 
-    fun BecomeMentorPage(view: View)
-    {
-
-    }
-
-    fun GoToDashboard(view: View)
+    fun BecomeMentorPage(view:View)
     {
         handler = Handler()
         handler.postDelayed(
             {
-                val intent = Intent(this@MainActivity9, MainActivity5::class.java)
+                val intent = Intent(this@MainActivity21, MainActivity12::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
+    }
+
+    fun GoToDashboard(view:View)
+    {
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity21, MainActivity5::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
+    }
+
+    fun GoToBookedSessionsPage(view: View)
+    {
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity21, MainActivity23::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
+    }
+
+    fun EditProfilePage(view: View)
+    {
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity21, MainActivity22::class.java)
                 startActivity(intent)
                 finish()
             }, 0)
@@ -35,7 +61,7 @@ class MainActivity9 : AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main9)
+        setContentView(R.layout.activity_main21)
 
         val home: TextView = findViewById(R.id.home_text)
         val search: TextView = findViewById(R.id.search_text)
@@ -49,16 +75,16 @@ class MainActivity9 : AppCompatActivity()
         val profilepic = findViewById<ImageView>(R.id.profile_png)
 
         homepic.setImageResource(R.drawable.home_icon_not_selected)
-        searchpic.setImageResource(R.drawable.search_icon_selected)
+        searchpic.setImageResource(R.drawable.search_icon_not_selected)
         chatpic.setImageResource(R.drawable.chat_icon_not_selected)
-        profilepic.setImageResource(R.drawable.profile_icon_not_selected)
+        profilepic.setImageResource(R.drawable.profile_icon_selected)
 
         //Navigation to DASHBOARD if clicked
         homepic.setOnClickListener {
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity9, MainActivity5::class.java)
+                    val intent = Intent(this@MainActivity21, MainActivity5::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -67,7 +93,7 @@ class MainActivity9 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity9, MainActivity5::class.java)
+                    val intent = Intent(this@MainActivity21, MainActivity5::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -78,7 +104,7 @@ class MainActivity9 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity9, MainActivity8::class.java)
+                    val intent = Intent(this@MainActivity21, MainActivity8::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -87,7 +113,7 @@ class MainActivity9 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity9, MainActivity8::class.java)
+                    val intent = Intent(this@MainActivity21, MainActivity8::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -106,7 +132,7 @@ class MainActivity9 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity9, MainActivity21::class.java)
+                    val intent = Intent(this@MainActivity21, MainActivity21::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -115,27 +141,15 @@ class MainActivity9 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity9, MainActivity21::class.java)
+                    val intent = Intent(this@MainActivity21, MainActivity21::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
         }
 
         home.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
-        search.setTextColor(ContextCompat.getColor(this, R.color.FontShadeLight))
-        //plus.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
+        search.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
         chat.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
-        profile.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
-
-    }
-    fun GoToSearchEngine(view: View)
-    {
-        handler = Handler()
-        handler.postDelayed(
-            {
-                val intent = Intent(this@MainActivity9, MainActivity8::class.java)
-                startActivity(intent)
-                finish()
-            }, 0)
+        profile.setTextColor(ContextCompat.getColor(this, R.color.FontShadeLight))
     }
 }

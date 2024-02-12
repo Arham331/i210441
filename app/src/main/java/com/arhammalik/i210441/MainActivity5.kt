@@ -234,10 +234,22 @@ class MainActivity5 : AppCompatActivity()
 
         //Navigation to PROFILE if clicked
         profilepic.setOnClickListener {
-
+            handler = Handler()
+            handler.postDelayed(
+                {
+                    val intent = Intent(this@MainActivity5, MainActivity21::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 0)
         }
         profile.setOnClickListener {
-
+            handler = Handler()
+            handler.postDelayed(
+                {
+                    val intent = Intent(this@MainActivity5, MainActivity21::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 0)
         }
     }
 }
