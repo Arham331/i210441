@@ -33,12 +33,24 @@ class MainActivity10 : AppCompatActivity()
 
     fun GoToCommunityPage(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity10, MainActivity17::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
     fun GoToBookSessionPage(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity10, MainActivity16::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
     override fun onCreate(savedInstanceState: Bundle?)
