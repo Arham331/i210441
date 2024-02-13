@@ -25,12 +25,34 @@ class MainActivity13 : AppCompatActivity()
 
     fun StartCall(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity13, MainActivity20::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
+    fun Picture_Video(view: View)
+    {
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity13, MainActivity18::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
+    }
     fun StartVideoCall(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity13, MainActivity19::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
     override fun onCreate(savedInstanceState: Bundle?)

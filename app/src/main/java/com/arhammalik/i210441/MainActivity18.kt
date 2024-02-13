@@ -21,7 +21,7 @@ class MainActivity18 : AppCompatActivity()
             }, 0)
     }
 
-    fun OpenVideo(view: View)
+    fun OpenCamera(view: View)
     {
         handler = Handler()
         handler.postDelayed(

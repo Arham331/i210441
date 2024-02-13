@@ -34,17 +34,35 @@ class MainActivity16 : AppCompatActivity()
 
     fun GoToJohnCooperChat(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity16, MainActivity13::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
     fun GoToJohnCooperVoiceCall(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity16, MainActivity20::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
 
     fun GoToJohnCooperVideoCall(view: View)
     {
-
+        handler = Handler()
+        handler.postDelayed(
+            {
+                val intent = Intent(this@MainActivity16, MainActivity19::class.java)
+                startActivity(intent)
+                finish()
+            }, 0)
     }
     override fun onCreate(savedInstanceState: Bundle?)
     {
