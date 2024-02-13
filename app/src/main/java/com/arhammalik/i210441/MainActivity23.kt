@@ -10,7 +10,7 @@ class MainActivity23 : AppCompatActivity()
 {
     private lateinit var handler: Handler
 
-    fun GoToProfile(view: View)
+    fun GoToProfilePage(view: View)
     {
         handler = Handler()
         handler.postDelayed(
