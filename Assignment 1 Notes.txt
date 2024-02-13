@@ -1,0 +1,25 @@
+Commit 1 -> Main Activity -> Loading ✔️
+Commit 2 -> Main Activity 2 -> Login ️✔️
+Commit 3 -> Main Activity 3 -> Sign Up ✔️
+Commit 4 -> Main Activity 4 -> Verification ✔️
+Commit 5 -> Main Activity 5 -> Dashboard ✔️
+Commit 6 -> Main Activity 6 -> Forgot Password ✔️
+Commit 7 -> Main Activity 7 -> Reset Password ✔️
+Commit 8 -> Main Activity 8 -> Search ✔️
+Commit 9 -> Main Activity 9 -> Search Results ✔️
+Commit 10 -> Main Activity 10 -> John Cooper ✔️
+Commit 11 -> Main Activity 11 -> John Cooper Review ✔️
+Commit 12 -> Main Activity 12 -> New Mentor ✔️
+Commit 13 -> Main Activity 13 -> John Cooper Message ✔️️
+Commit 14 -> Main Activity 14 -> Chats ✔️
+Commit 15 -> Main Activity 15 -> Photo ✔️
+Commit 16 -> Main Activity 16 -> Book Session ✔️
+Commit 17 -> Main Activity 17 -> John Cooper Community ✔️
+Commit 18 -> Main Activity 18 -> Video ✔️
+Commit 19 -> Main Activity 19 -> Video Call ✔️
+Commit 20 -> Main Activity 20 -> Voice Call ✔️
+Commit 21 -> Main Activity 21 -> View Profile ✔️
+Commit 22 -> Main Activity 22 -> Edit Profile ✔️
+Commit 23 -> Main Activity 23 -> Booked Sessions ✔️
+Commit 24 -> Main Activity 24 -> Notifications ✔️
+
