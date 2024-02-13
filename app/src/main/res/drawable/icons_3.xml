@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/photo_icon"
+        android:width="35dp"
+        android:height="35dp" />
+    <item
+        android:drawable="@drawable/microphone_icon"
+        android:width="35dp"
+        android:height="35dp"
+        android:left="35dp"/>
+    <item
+        android:drawable="@drawable/send_icon"
+        android:width="35dp"
+        android:height="35dp"
+        android:left="70dp"/>
+</layer-list>

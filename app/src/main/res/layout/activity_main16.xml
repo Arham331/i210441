@@ -22,7 +22,7 @@
         android:layout_height="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
-        android:onClick="GoToDashboard"
+        android:onClick="GoToJohnCooperPage"
         android:src="@drawable/backarrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -1,0 +1,13 @@
+<!-- custom_rating_icons.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/paperclip_icon"
+        android:width="35dp"
+        android:height="35dp" />
+    <item
+        android:drawable="@drawable/gallery_icon"
+        android:width="35dp"
+        android:height="35dp"
+        android:left="35dp"/>
+</layer-list>

@@ -111,12 +111,25 @@ class MainActivity8 : AppCompatActivity()
                 }, 0)
         }
 
+
         //Navigation to CHATS if clicked
         chatpic.setOnClickListener {
-
+            handler = Handler()
+            handler.postDelayed(
+                {
+                    val intent = Intent(this@MainActivity8, MainActivity14::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 0)
         }
         chat.setOnClickListener {
-
+            handler = Handler()
+            handler.postDelayed(
+                {
+                    val intent = Intent(this@MainActivity8, MainActivity14::class.java)
+                    startActivity(intent)
+                    finish()
+                }, 0)
         }
 
         //Navigation to PROFILE if clicked

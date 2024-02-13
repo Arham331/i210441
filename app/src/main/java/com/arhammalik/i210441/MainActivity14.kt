@@ -6,66 +6,53 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 
-class MainActivity21 : AppCompatActivity()
+class MainActivity14 : AppCompatActivity()
 {
     private lateinit var handler: Handler
 
-    fun BecomeMentorPage(view:View)
+    fun GoToDashboard(view: View)
     {
         handler = Handler()
         handler.postDelayed(
             {
-                val intent = Intent(this@MainActivity21, MainActivity12::class.java)
+                val intent = Intent(this@MainActivity14, MainActivity5::class.java)
                 startActivity(intent)
                 finish()
             }, 0)
     }
 
-    fun GoToDashboard(view:View)
+    fun BecomeMentorPage(view: View)
     {
         handler = Handler()
         handler.postDelayed(
             {
-                val intent = Intent(this@MainActivity21, MainActivity5::class.java)
+                val intent = Intent(this@MainActivity14, MainActivity12::class.java)
                 startActivity(intent)
                 finish()
             }, 0)
     }
 
-    fun GoToBookedSessionsPage(view: View)
+  /*  fun GoToJohnCooperChat(view: View)
     {
         handler = Handler()
         handler.postDelayed(
             {
-                val intent = Intent(this@MainActivity21, MainActivity23::class.java)
+                val intent = Intent(this@MainActivity14, MainActivity13::class.java)
                 startActivity(intent)
                 finish()
             }, 0)
-    }
-
-    fun EditProfilePage(view: View)
-    {
-        handler = Handler()
-        handler.postDelayed(
-            {
-                val intent = Intent(this@MainActivity21, MainActivity22::class.java)
-                startActivity(intent)
-                finish()
-            }, 0)
-    }
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main21)
-
+        setContentView(R.layout.activity_main14)
+        //ribbon buttons
         val home: TextView = findViewById(R.id.home_text)
         val search: TextView = findViewById(R.id.search_text)
-        val plus: LinearLayout = findViewById(R.id.plusButton)
         val chat: TextView = findViewById(R.id.chat_text)
         val profile: TextView = findViewById(R.id.profile_text)
 
@@ -76,15 +63,20 @@ class MainActivity21 : AppCompatActivity()
 
         homepic.setImageResource(R.drawable.home_icon_not_selected)
         searchpic.setImageResource(R.drawable.search_icon_not_selected)
-        chatpic.setImageResource(R.drawable.chat_icon_not_selected)
-        profilepic.setImageResource(R.drawable.profile_icon_selected)
+        chatpic.setImageResource(R.drawable.chat_icon_selected)
+        profilepic.setImageResource(R.drawable.profile_icon_not_selected)
+
+        home.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
+        search.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
+        chat.setTextColor(ContextCompat.getColor(this, R.color.FontShadeLight))
+        profile.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
 
         //Navigation to DASHBOARD if clicked
         homepic.setOnClickListener {
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity21, MainActivity5::class.java)
+                    val intent = Intent(this@MainActivity14, MainActivity5::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -93,7 +85,7 @@ class MainActivity21 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity21, MainActivity5::class.java)
+                    val intent = Intent(this@MainActivity14, MainActivity5::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -104,7 +96,7 @@ class MainActivity21 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity21, MainActivity8::class.java)
+                    val intent = Intent(this@MainActivity14, MainActivity8::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -113,19 +105,18 @@ class MainActivity21 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity21, MainActivity8::class.java)
+                    val intent = Intent(this@MainActivity14, MainActivity8::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
         }
-
 
         //Navigation to CHATS if clicked
         chatpic.setOnClickListener {
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity21, MainActivity14::class.java)
+                    val intent = Intent(this@MainActivity14, MainActivity14::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -134,7 +125,7 @@ class MainActivity21 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity21, MainActivity14::class.java)
+                    val intent = Intent(this@MainActivity14, MainActivity14::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -145,7 +136,7 @@ class MainActivity21 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity21, MainActivity21::class.java)
+                    val intent = Intent(this@MainActivity14, MainActivity21::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
@@ -154,15 +145,10 @@ class MainActivity21 : AppCompatActivity()
             handler = Handler()
             handler.postDelayed(
                 {
-                    val intent = Intent(this@MainActivity21, MainActivity21::class.java)
+                    val intent = Intent(this@MainActivity14, MainActivity21::class.java)
                     startActivity(intent)
                     finish()
                 }, 0)
         }
-
-        home.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
-        search.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
-        chat.setTextColor(ContextCompat.getColor(this, R.color.FontShadeDark))
-        profile.setTextColor(ContextCompat.getColor(this, R.color.FontShadeLight))
     }
 }
